@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Títulos */
+h2 { color: #333; margin-bottom: 20px; font-weight: 600; }
+
+/* Formulario */
+form { display: flex; flex-direction: column; text-align: left; }
+
+label { font-weight: 600; margin-top: 10px; color: #555; }
+
+input[type="text"], input[type="email"], select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #764ba2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(118, 75, 162, 0.3);
+}
+
+/* Botones */
+.botones-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[type="submit"], .btn-volver {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+input[type="submit"]:active { transform: scale(0.95); }
+
+.btn-guardar { background-color: #28a745; color: white; }
+.btn-guardar:hover { background-color: #218838; }
+
+.btn-listar { background-color: #6c757d; color: white; }
+.btn-listar:hover { background-color: #5a6268; }
+
+.btn-volver {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Tabla de resultados (para listar.jsp) */
+.contenedor-tabla {
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; }
+
+th { background-color: #764ba2; color: white; padding: 12px; }
+td { padding: 10px; border-bottom: 1px solid #ddd; color: #333; }
+tr:hover { background-color: #f1f1f1; }
